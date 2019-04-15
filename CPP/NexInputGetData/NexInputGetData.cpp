@@ -44,7 +44,7 @@ typedef struct _NEX_OUTPUT_STATE
 {
 	WORD								LeftMotorSpeed;
 	WORD								RightMotorSpeed;
-	bool								UseLed;
+	BYTE								LEDBrightness;
 	BYTE								LEDRed;
 	BYTE								LEDGreen;
 	BYTE								LEDBlue;
@@ -173,7 +173,7 @@ int main()
 			NexControllerOutputState.LEDRed = 0;
 			NexControllerOutputState.LEDGreen = 92;
 			NexControllerOutputState.LEDBlue = 126;
-			NexControllerOutputState.UseLed = true;
+			NexControllerOutputState.LEDBrightness = 125;
 			NexControllerOutputState.LeftMotorSpeed = 12000;
 			NexControllerOutputState.RightMotorSpeed = 12000;
 			for (int i = 0; i < NEX_INPUT_MAX_COUNT; i++)
