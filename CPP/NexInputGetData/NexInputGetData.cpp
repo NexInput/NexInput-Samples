@@ -106,8 +106,8 @@ int main()
 
 		if (NEXInputGetState == NULL)
 			printf(" NEXInputGetState not found\r\n");
-		if (NEXInputGetState == NULL)
-			printf(" NEXInputGetState not found\r\n");
+		if (NEXInputSetState == NULL)
+			printf(" NEXInputSetState not found\r\n");
 		if (NEXInputGetInfo == NULL)
 			printf(" NEXInputGetInfo not found\r\n");
 		if (NEXInputPowerOff == NULL)
